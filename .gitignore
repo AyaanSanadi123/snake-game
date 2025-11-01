@@ -1,0 +1,14 @@
+# Python Virtual Environment
+myEnv/
+
+# PyTorch model files
+*.pth
+checkpoint.pth
+model/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Matplotlib cache
+.cache/
