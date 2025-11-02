@@ -22,7 +22,7 @@ class Agent :
         self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma)
         
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.955
+        self.epsilon_decay = 0.999
         self.epsilon = 1.0 # Default starting epsilon
     def get_state(self,game):
         # this function converts complex game logic into a list of 11 items,
@@ -95,7 +95,7 @@ class Agent :
 
     def get_action(self, state):
         # random moves: tradeoff exploration / exploitation
-        self.epsilon = 80 - self.n_games
+       
         final_move = [0,0,0]
         if random.random() < self.epsilon:
             move = random.randint(0, 2)
