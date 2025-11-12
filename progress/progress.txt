@@ -1,0 +1,3 @@
+I developed a self-learning Snake game agent using reinforcement learning. The model was trained over 7,000 games, during which it learned to navigate, collect food, and avoid collisions — achieving a highest score of 77.
+Currently, the agent’s perception is limited to its immediate surroundings, allowing it to detect danger only in nearby cells. This constraint causes the snake to collide with itself once it grows too long.
+To improve its performance, I plan to integrate a Monte Carlo Tree Search (MCTS) approach, enabling the agent to better understand the full environment and make longer-term strategic decisions, which should significantly boost its maximum achievable score.
